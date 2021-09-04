@@ -1,0 +1,307 @@
+/* font-family used: */
+
+
+/* font-family: 'Bree Serif', serif;
+font-family: 'Playball', cursive;
+font-family: 'Titillium Web', sans-serif; */
+
+
+/* CSS Reset */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Navigation Bar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    /* top: 0px;
+    left: 0px; */
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.Arrow-top {
+    background-color: rgb(180, 244, 246);
+    font-size: 1.3rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 3.5rem;
+    border: 2px solid rgb(255, 107, 107);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.Arrow-top a {
+    text-decoration: none;
+    color: blue;
+}
+
+
+/* Navigation Bar: Logo and Image */
+
+.logo {
+    margin: 10px 34px;
+}
+
+.logo img {
+    margin: 0px 3px;
+    border: 1px solid white;
+    border-radius: 30%;
+    width: 112px;
+    height: 94px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+    margin: 2px 0px;
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    padding: 3px 22px;
+    /* Padding can also be used in '#navbar ul li' also, but if we do that we cannot use in the hover property as it will not be applied in hover property. Hence we will use in <a> tag i.e in '#navbar ul li a' */
+    text-decoration: none;
+    border-radius: 20px;
+    color: white;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 347px;
+    padding: 20px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('../Images/bgcol2.jpg') no-repeat center center/cover;
+    position: absolute;
+    /* top: 0px;
+    left: 0px; */
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn {
+    padding: 10px 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: cyan;
+    color: black;
+    margin: 17px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+/* Services Section  */
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services-container h1 {
+    color: black;
+    margin-top: 6.5rem;
+    font-size: 4rem;
+    padding: 20px;
+    font-family: 'Playball', cursive;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 10px;
+    margin: -40px 10px;
+    border-radius: 31px;
+    background-color: #e6e1e1;
+}
+
+#services .box img {
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+
+/* Client Section */
+
+#client-section {
+    height: 230px;
+    position: relative;
+    top: 20px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../Images/bgcol.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 150%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#client-section h1 {
+    color: black;
+    font-size: 4rem;
+    padding: 20px;
+    font-family: 'Playball', cursive;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-items {
+    height: 12px;
+    padding: 34px;
+}
+
+#clients img {
+    height: 100px;
+}
+
+
+/* Contact Section */
+
+#contact {
+    position: relative;
+    top: 150px;
+}
+
+#contact::before {
+    content: "";
+    background: url('../Images/restaurant.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#contact h1 {
+    color: rgb(44, 42, 42);
+    font-size: 4rem;
+    padding: 20px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+}
+
+#contact-box input::placeholder,
+textarea::placeholder {
+    color: rgb(97, 95, 95);
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* Footer  */
+
+footer {
+    position: relative;
+    bottom: -155px;
+    height: 20px;
+    background-color: rgb(5, 17, 45);
+    color: white;
+    padding: 30px 20px;
+}
+
+
+/* Utility classes */
+
+
+/* You can also use this-> '#home h1 {}' , but here Harry shows the importance of using utitlity classes as we can change any 'h1' tag by just making a class of 'h-primary'  */
+
+.h-primary {
+    color: white;
+    font-size: 4rem;
+    padding: 20px;
+    font-family: 'Playball', cursive;
+}
+
+.h-secondary {
+    font-size: 2rem;
+    padding: 12px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+/* '.center' is a class which will be used only to align the text. This class is used in    
+.h-primary and .h-secondary  */
+
+.center {
+    text-align: center;
+}
+
+
+/* font-family: 'Bree Serif', serif;
+font-family: 'Playball', cursive;
+font-family: 'Titillium Web', sans-serif; */
