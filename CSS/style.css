@@ -301,6 +301,12 @@ footer {
     text-align: center;
 }
 
+@media screen and (min-width: 1060px) {
+    #home{
+        margin-bottom: 18rem;
+    }
+}
+
 
 /* font-family: 'Bree Serif', serif;
 font-family: 'Playball', cursive;
